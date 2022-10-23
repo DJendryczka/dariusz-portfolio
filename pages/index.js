@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
+import {AiFillGithub, AiFillLinkedin, AiFillFacebook} from 'react-icons/ai'
+import Image from 'next/image'
+import deved from '../public/dev-ed-wave.png'
 
 export default function Home() {
   return (
@@ -19,10 +22,25 @@ export default function Home() {
               <li><a className=' bg-orange-600 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
             </ul>
           </nav>
+          <div className='text-center p-10'>
+            <h2 className=' text-5xl py-2 text-orange-600 font-bold'>Dariusz Jendryczka</h2>
+            <h3 className=' text-2xl py-2'>Frontend Developer</h3>
+            <p className=' text-md py-5 leading-8 text-gray-800'>Freelancer providing services in frontend. Learning new things, building new projects, always moving forward means you are alive ...</p>
+          </div>
+          <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-700'>
+            <AiFillGithub />
+            <AiFillLinkedin />
+            <AiFillFacebook />
+          </div>
+          <div className=' relative bg-gradient-to-b from-orange-600 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
+            <Image src={deved} alt='Pic of me' layout='fill' objectFit='cover' />
+          </div>
+        </section>
+        <section>
           <div>
-            <h2>Dariusz Jendryczka</h2>
-            <h3>Frontend Developer</h3>
-            <p>Freelancer providing services in frontend.</p>
+            <h3 className=' text-3xl py-1'>About me</h3>
+            <p className=' text-md py-2 leading-8 text-gray-700'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>full stack developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. After 30 years, I'm back on track again</p>
+            <p className=' text-md py-2 leading-8 text-gray-700'>At the moment i offer building small and medium size landing pages, using HTML CSS JavaScript and React.</p>
           </div>
         </section>
       </main>
