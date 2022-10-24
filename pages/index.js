@@ -3,6 +3,9 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin, AiFillFacebook} from 'react-icons/ai'
 import Image from 'next/image'
 import deved from '../public/dev-ed-wave.png'
+import design from '../public/design.png'
+import code from '../public/code.png'
+import consulting from '../public/consulting.png'
 
 export default function Home() {
   return (
@@ -40,7 +43,39 @@ export default function Home() {
           <div>
             <h3 className=' text-3xl py-1'>About me</h3>
             <p className=' text-md py-2 leading-8 text-gray-700'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>full stack developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. After 30 years, I'm back on track again</p>
-            <p className=' text-md py-2 leading-8 text-gray-700'>At the moment i offer building small and medium size landing pages, using HTML CSS JavaScript and React.</p>
+            <p className=' text-md py-2 leading-8 text-gray-700'>At the moment i offer building small and medium size landing pages, using <span className=' text-orange-600'>HTML CSS JavaScript or React
+              </span> .</p>
+          </div>
+          <div>
+            <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={design} width={100} height={100} alt='Design logo' />
+              <h3 className=' text-lg font-semibold pt-8 pb-2'>Design</h3>
+              <p className=' py-2'>Creating designs suited for your needs following core design</p>
+              <h4 className=' text-orange-600 py-4'>Tools I use</h4>
+              <p className=' text-gray-800 py-1'>Figma</p>
+              <p className=' text-gray-800 py-1'>Illustrator</p>
+            </div>
+            <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={code} width={100} height={100} alt='Design logo' />
+              <h3 className=' text-lg font-semibold pt-8 pb-2'>Code</h3>
+              <p className=' py-2'>Creating designs suited for your needs following core design</p>
+              <h4 className=' text-orange-600 py-4'>Tools I use</h4>
+              <p className=' text-gray-800 py-1'>Figma</p>
+              <p className=' text-gray-800 py-1'>Illustrator</p>
+            </div>
+            <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+              <Image src={consulting} width={100} height={100} alt='Design logo' />
+              <h3 className=' text-lg font-semibold pt-8 pb-2'>Consulting</h3>
+              <p className=' py-2'>Creating designs suited for your needs following core design</p>
+              <h4 className=' text-orange-600 py-4'>Tools I use</h4>
+              <p className=' text-gray-800 py-1'>Figma</p>
+              <p className=' text-gray-800 py-1'>Illustrator</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+          <h3 className=' text-3xl py-1'>Portfolio</h3>
           </div>
         </section>
       </main>
