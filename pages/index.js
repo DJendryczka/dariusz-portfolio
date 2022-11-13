@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillGithub, AiFillLinkedin, AiFillFacebook} from 'react-icons/ai'
+import {AiFillGithub, AiFillLinkedin, AiFillTwitterCircle} from 'react-icons/ai'
 import Image from 'next/image'
-import deved from '../public/jag.png'
+import deved from '../public/Darek Mem..png'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
@@ -24,21 +24,21 @@ export default function Home() {
       <main className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800'>
         <section className=' min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-mono'>DiagTech</h1>
+            <h1 className='text-xl font-mono dark:text-white'>DiagTech</h1>
             <ul className=' flex items-center'>
-              <li><BsFillMoonStarsFill onClick={ () => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
+              <li><BsFillMoonStarsFill onClick={ () => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl dark:text-white'/></li>
               <li><a className=' bg-orange-600 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
             <h2 className=' text-5xl py-2 text-orange-600 font-bold md:text-6xl'>Dariusz Jendryczka</h2>
-            <h3 className=' text-2xl py-2 md:text-3xl'>Frontend Developer</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>Freelancer providing services in frontend. Learning new things, building new projects, always moving forward means you are alive ...</p>
+            <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Frontend Developer</h3>
+            <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200'>Freelancer providing services in frontend. Learning new things, building new projects, always moving forward means you are alive ...</p>
           </div>
-          <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-700'>
-            <AiFillGithub />
-            <AiFillLinkedin />
-            <AiFillFacebook />
+          <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-gray-200'>
+            <a href="https://github.com/DJendryczka?tab=repositories" target="_blank"><AiFillGithub className=' cursor-pointer' /></a>
+            <a href="https://linkedin.com/in/20211975dariusz-jendryczka-ab062834" target="_blank" ><AiFillLinkedin className=' cursor-pointer' /></a>
+            <AiFillTwitterCircle className=' cursor-pointer' />
           </div>
           <div className=' relative bg-gradient-to-b from-orange-600 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden md:h-96 md:w-96 shadow-2xl'>
             <Image src={deved} alt='Pic of me' layout='fill' objectFit='cover' />
@@ -46,42 +46,42 @@ export default function Home() {
         </section>
         <section>
           <div className=' md:px-20 lg:px-40'>
-            <h3 className=' text-3xl py-1'>About me</h3>
-            <p className=' text-md py-2 leading-8 text-gray-700'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>full stack developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. After 30 years, I'm back on track again</p>
-            <p className=' text-md py-2 leading-8 text-gray-700'>At the moment i offer building small and medium size landing pages, using <span className=' text-orange-600'>HTML CSS JavaScript or React
+            <h3 className=' text-3xl py-1 dark:text-gray-200'>About me</h3>
+            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>Front end developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. Now I'm back learning again</p>
+            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>At the moment i offer building small and medium size landing pages, using <span className=' text-orange-600'>HTML CSS JavaScript or React
               </span> .</p>
           </div>
           <div className='lg:flex gap-10 justify-center'>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className=' text-center shadow-lg dark:shadow-gray-600 p-10 rounded-xl my-10'>
               <Image src={design} width={100} height={100} alt='Design logo' />
-              <h3 className=' text-lg font-semibold pt-8 pb-2'>Design</h3>
-              <p className=' py-2'>Creating designs suited for your needs following core design</p>
+              <h3 className=' text-lg font-semibold pt-8 pb-2 dark:text-gray-200'>Design</h3>
+              <p className=' py-2 dark:text-gray-200'>Creating designs suited for your needs following core design.</p>
               <h4 className=' text-orange-600 py-4'>Tools I use</h4>
-              <p className=' text-gray-800 py-1'>Figma</p>
-              <p className=' text-gray-800 py-1'>Illustrator</p>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>Figma</p>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>Illustrator</p>
             </div>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className=' text-center shadow-lg dark:shadow-gray-600 p-10 rounded-xl my-10'>
               <Image src={code} width={100} height={100} alt='Design logo' />
-              <h3 className=' text-lg font-semibold pt-8 pb-2'>Code</h3>
-              <p className=' py-2'>Creating websites and aplicationc using latest technologis</p>
-              <h4 className=' text-orange-600 py-4'>Tools I use</h4>
-              <p className=' text-gray-800 py-1'>HTML CSS JavaScript</p>
-              <p className=' text-gray-800 py-1'>React Next.JS Sanity</p>
+              <h3 className=' text-lg font-semibold pt-8 pb-2 dark:text-gray-200'>Code</h3>
+              <p className=' py-2 dark:text-gray-200'>Creating websites and aplications using latest technologis.</p>
+              <h4 className=' text-orange-600 py-4 dark:text-gray-200'>Tools I use</h4>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>HTML CSS JavaScript</p>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>React Next.JS Sanity</p>
             </div>
-            <div className=' text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className=' text-center shadow-lg dark:shadow-gray-600 p-10 rounded-xl my-10'>
               <Image src={consulting} width={100} height={100} alt='Design logo' />
-              <h3 className=' text-lg font-semibold pt-8 pb-2'>Consulting</h3>
-              <p className=' py-2'>Providing help in you It inviroment from scratch or current</p>
-              <h4 className=' text-orange-600 py-4'>Coverage</h4>
-              <p className=' text-gray-800 py-1'>Networking</p>
-              <p className=' text-gray-800 py-1'>Illustrator</p>
+              <h3 className=' text-lg font-semibold pt-8 pb-2 dark:text-gray-200'>Consulting</h3>
+              <p className=' py-2 dark:text-gray-200'>Providing help in you It inviroment from scratch, or current.</p>
+              <h4 className=' text-orange-600 py-4 dark:text-gray-200'>Coverage</h4>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>Networking</p>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>Illustrator</p>
             </div>
           </div>
         </section>
         <section>
           <div className=' md:px-20 lg:px-40'>
-          <h3 className=' text-3xl py-1'>Portfolio</h3>
-          <p className=' text-md py-2 leading-8 text-gray-700'>Some of my projects</p>
+          <h3 className=' text-3xl py-1 dark:text-gray-200'>Portfolio</h3>
+          <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>Some of my projects</p>
           </div>
           <div className=' flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
             <div className=' basis-1/3 flex-1'>
