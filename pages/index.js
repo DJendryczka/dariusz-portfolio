@@ -47,7 +47,7 @@ export default function Home() {
         <section>
           <div className=' md:px-20 lg:px-40'>
             <h3 className=' text-3xl py-1 dark:text-gray-200'>About me</h3>
-            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>Front end developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. Now I'm back learning again</p>
+            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>Front end developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. Now Im back learning again</p>
             <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>At the moment i offer building small and medium size landing pages, using <span className=' text-orange-600'>HTML CSS JavaScript or React
               </span> .</p>
           </div>
