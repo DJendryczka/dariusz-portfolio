@@ -36,8 +36,8 @@ export default function Home() {
             <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200'>Freelancer providing services in frontend. Learning new things, building new projects, always moving forward means you are alive ...</p>
           </div>
           <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-gray-200'>
-            <a href="https://github.com/DJendryczka?tab=repositories" target="_blank"><AiFillGithub className=' cursor-pointer' /></a>
-            <a href="https://linkedin.com/in/20211975dariusz-jendryczka-ab062834" target="_blank" ><AiFillLinkedin className=' cursor-pointer' /></a>
+            <a href="https://github.com/DJendryczka?tab=repositories" target="_blank" rel="noreferrer" ><AiFillGithub className=' cursor-pointer' /></a>
+            <a href="https://linkedin.com/in/20211975dariusz-jendryczka-ab062834" target="_blank" rel="noreferrer" ><AiFillLinkedin className=' cursor-pointer' /></a>
             <AiFillTwitterCircle className=' cursor-pointer' />
           </div>
           <div className=' relative bg-gradient-to-b from-orange-600 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden md:h-96 md:w-96 shadow-2xl'>
