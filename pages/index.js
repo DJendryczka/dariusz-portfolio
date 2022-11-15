@@ -95,7 +95,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <footer className=' text-center py-3 mb-3'>
+        <footer className=' text-center py-3 mb-3 dark:text-gray-200'>
           <p>2022 Diagtech</p>
         </footer>
       </main>
