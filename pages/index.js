@@ -6,9 +6,9 @@ import deved from '../public/Darek Mem..png'
 import design from '../public/design.png'
 import code from '../public/code.png'
 import consulting from '../public/consulting.png'
-import web1 from '../public/web1.png'
-import web2 from '../public/web2.png'
-import web3 from '../public/web3.png'
+import web1 from '../public/sweet.jpg'
+import web2 from '../public/skanor.jpg'
+import web3 from '../public/skanor.jpg'
 import { useState } from 'react';
 
 export default function Home() {
@@ -24,7 +24,7 @@ export default function Home() {
       <main className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-800'>
         <section className=' min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-mono dark:text-white'>DiagTech</h1>
+            <h1 className='text-xl font-mono dark:text-white'>D.J.</h1>
             <ul className=' flex items-center'>
               <li><BsFillMoonStarsFill onClick={ () => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl dark:text-white'/></li>
               <li><a className=' bg-orange-600 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
@@ -66,15 +66,15 @@ export default function Home() {
               <p className=' py-2 dark:text-gray-200'>Creating websites and aplications using latest technologis.</p>
               <h4 className=' text-orange-600 py-4 dark:text-gray-200'>Tools I use</h4>
               <p className=' text-gray-800 py-1 dark:text-gray-200'>HTML CSS JavaScript</p>
-              <p className=' text-gray-800 py-1 dark:text-gray-200'>React Next.JS Sanity</p>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>React Next.JS</p>
             </div>
             <div className=' text-center shadow-lg dark:shadow-gray-600 p-10 rounded-xl my-10'>
               <Image src={consulting} width={100} height={100} alt='Design logo' />
               <h3 className=' text-lg font-semibold pt-8 pb-2 dark:text-gray-200'>Consulting</h3>
               <p className=' py-2 dark:text-gray-200'>Providing help in you It inviroment from scratch, or current.</p>
               <h4 className=' text-orange-600 py-4 dark:text-gray-200'>Coverage</h4>
+              <p className=' text-gray-800 py-1 dark:text-gray-200'>IT equipment</p>
               <p className=' text-gray-800 py-1 dark:text-gray-200'>Networking</p>
-              <p className=' text-gray-800 py-1 dark:text-gray-200'>Illustrator</p>
             </div>
           </div>
         </section>
@@ -90,13 +90,13 @@ export default function Home() {
             <div className=' basis-1/3 flex-1'>
               <Image className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={web2} alt='e.g.website' />
             </div>
-            <div className=' basis-1/3 flex-1'>
+            {/* <div className=' basis-1/3 flex-1'>
               <Image className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={web3} alt='e.g.website' />
-            </div>
+            </div> */}
           </div>
         </section>
         <footer className=' text-center py-3 mb-3 dark:text-gray-200'>
-          <p>2022 Diagtech</p>
+          <p>2023 Dariusz Jendryczka</p>
         </footer>
       </main>
 
