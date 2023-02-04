@@ -8,7 +8,7 @@ import code from '../public/code.png'
 import consulting from '../public/consulting.png'
 import web1 from '../public/sweet.jpg'
 import web2 from '../public/skanor.jpg'
-import web3 from '../public/skanor.jpg'
+import web3 from '../public/keto.jpg'
 import { useState } from 'react';
 
 export default function Home() {
@@ -27,12 +27,12 @@ export default function Home() {
             <h1 className='text-xl font-mono dark:text-white'>D.J.</h1>
             <ul className=' flex items-center'>
               <li><BsFillMoonStarsFill onClick={ () => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl dark:text-white'/></li>
-              <li><a className=' bg-orange-600 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
+              <li><a className=' bg-orange-600 text-white px-4 py-2 rounded-md ml-8' href='https://linkedin.com/in/20211975dariusz-jendryczka-ab062834'>Resume</a></li>
             </ul>
           </nav>
           <div className='text-center p-10'>
             <h2 className=' text-5xl py-2 text-orange-600 font-bold md:text-6xl'>Dariusz Jendryczka</h2>
-            <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Frontend Developer</h3>
+            <h3 className=' text-2xl py-2 md:text-3xl dark:text-white'>Web Developer</h3>
             <p className=' text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-200'>Freelancer providing services in frontend. Learning new things, building new projects, always moving forward means you are alive ...</p>
           </div>
           <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-700 dark:text-gray-200'>
@@ -47,8 +47,8 @@ export default function Home() {
         <section>
           <div className=' md:px-20 lg:px-40'>
             <h3 className=' text-3xl py-1 dark:text-gray-200'>About me</h3>
-            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>Front end developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. Now Im back learning again</p>
-            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>At the moment i offer building small and medium size landing pages, using <span className=' text-orange-600'>HTML CSS JavaScript or React
+            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>I was born i Poland, Gdansk in 1973. Currently i live in Sweden and learning to be <span className=' text-orange-600'>Full stack developer</span> . I love to code, and i wrote my first code in 1989 in Basic V2.0 on Commondore 64 - it was fun. Unfortunately after school I had to work and stopped coding. Now Im back learning again</p>
+            <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>At the moment i offer building small and medium size landing pages and Apps using <span className=' text-orange-600'>HTML CSS JavaScript or React
               </span> .</p>
           </div>
           <div className='lg:flex gap-10 justify-center'>
@@ -84,15 +84,18 @@ export default function Home() {
           <p className=' text-md py-2 leading-8 text-gray-700 dark:text-gray-200'>Some of my projects</p>
           </div>
           <div className=' flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className=' basis-1/3 flex-1'>
+            <div className=' basis-1/4 flex-1'>
               <Image className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={web1} alt='e.g.website' />
+              <p className=' p-7'>Ongoing project, can be viewed <a className=' text-orange-400' href='https://djendryczka.github.io/cakebyn/'>here</a></p>
             </div>
-            <div className=' basis-1/3 flex-1'>
+            <div className=' basis-1/4 flex-1'>
               <Image className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={web2} alt='e.g.website' />
+              <p className=' p-7'>Simple landing page for local entrepreneu, can be viewed <a className=' text-orange-400' href='https://skanorsservice.se'>here</a></p>
             </div>
-            {/* <div className=' basis-1/3 flex-1'>
+            <div className=' basis-1/4 flex-1'>
               <Image className=' rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive' src={web3} alt='e.g.website' />
-            </div> */}
+              <p className=' p-7'>Ongoing project, can be viewed <a className=' text-orange-400' href='https://majestic-gecko-a4efa4.netlify.app'>here</a></p>
+            </div>
           </div>
         </section>
         <footer className=' text-center py-3 mb-3 dark:text-gray-200'>
