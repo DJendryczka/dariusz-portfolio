@@ -11,10 +11,10 @@ const Main = () => {
       <section className=" w-full h-screen text-center ">
         <div className=" max-w-[1240px] w-full h-full mx-auto  flex justify-center items-center flex-col">
           <p className=" uppercase text-sm tracking-widest text-gray-600 mt-[7rem] md:mt-20">
-            Let's build something together
+            Let&apos;s build something together
           </p>
           <h2 className=" text-5xl py-4  font-bold md:text-6xl">
-            Hi, I'm <span className="text-orange-600">Dariusz</span>
+            Hi, I&apos;m <span className="text-orange-600">Dariusz</span>
           </h2>
           <div className=" relative  shadow-gray-400 bg-gradient-to-b from-orange-600 rounded-full w-[8rem] h-[8rem] my-10 mx-auto overflow-hidden md:h-64 md:w-64 shadow-2xl">
             <Image

@@ -17,9 +17,9 @@ const About = () => {
             layer, Vehicle technician, and cleaning stuff. Self tought in all
             areas. In 2021 i decided to do that i loved doing in my yanger days,
             learn to code. Back then in 1989 i wrote my first code in Basic V2
-            on Commondore 64 - it was fun. Now i'm learning to be
+            on Commondore 64 - it was fun. Now i&apos;m learning to be
             <span className=" text-orange-600"> Full stack developer</span> . I
-            love to code, and i'm spending all my free time to gain knowledge.
+            love to code, and i&apos;m spending all my free time to gain knowledge.
           </p>
           <p className=" text-xl  py-2 leading-8 text-gray-700 dark:text-gray-200">
             At the moment i offer building responsive front-end web aplications

@@ -12,7 +12,7 @@ const Projects = () => {
         <p className=" text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className=" py-4">What i've Built</h2>
+        <h2 className=" py-4">What i&apos;ve Built</h2>
         <div className=" grid md:grid-cols-2 gap-8">
           <ProjectItem title="The Sweet Paradise" bgImage={Sweet} projectUrl="https://djendryczka.github.io/cakebyn/" />
           <ProjectItem title="Skanorsservice" bgImage={Skanor} projectUrl='https://skanorsservice.se' />
