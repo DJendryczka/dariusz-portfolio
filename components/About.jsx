@@ -4,7 +4,7 @@ import Dator from "../public/dator.jpg";
 
 const About = () => {
   return (
-    <div className=" w-full md:h-screen flex items-center p-2 py-16 text-center md:text-left">
+    <div id="about" className=" w-full md:h-screen flex items-center p-2 py-16 text-center md:text-left">
       <div className=" max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className=" col-span-2">
           <h3 className=" text-3xl py-1 dark:text-gray-200">About</h3>

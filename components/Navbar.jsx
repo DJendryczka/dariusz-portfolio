@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import { BsFillMoonStarsFill, BsFillPersonLinesFill } from "react-icons/bs";
+import React, {useState, useEffect} from "react";
+import {  BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import {
@@ -8,40 +8,46 @@ import {
 } from "react-icons/fa";
 
 
+
 const Navbar = () => {
-  
+  const [shadow, setShadow] = useState(false)
   const [ nav, setNav] = useState(false)
 
+ 
   const handleNav = () => {
     setNav(!nav)
-
   }
+  useEffect(() =>{
+    const handleShadow = () => {
+      if(window.scrollY >= 90){
+        setShadow(true)
+      }else{
+        setShadow(false)
+      }
+    }
+    window.addEventListener('scroll', handleShadow)
+  },[])
   return (
-    <div className=" fixed w-full h-20 shadow-xl z-[100]">
+    <div className={shadow ? " fixed w-full h-20 shadow-xl z-[100]" : " fixed w-full h-20 z-[100]"}>
       <div className=" flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <h2 className=" text-2xl font-bold">D.J.</h2>
-        
-            {/* <BsFillMoonStarsFill
-              onClick={() => setDarkMode(!darkMode)}
-              className=" cursor-pointer text-2xl dark:text-white mx-2"
-            /> */}
       
         <ul className=" hidden md:flex items-center">
           
           <Link href="/">
-            <li className=" ml-10 text-sm hover:border-b">HOME</li>
+            <li className=" ml-10 text-sm hover:border-b cursor-pointer">HOME</li>
           </Link>
-          <Link href="/">
-            <li className=" ml-10 text-sm hover:border-b">ABOUT</li>
+          <Link href="/#about" scroll={false}>
+            <li className=" ml-10 text-sm hover:border-b cursor-pointer">ABOUT</li>
           </Link>
-          <Link href="/">
-            <li className=" ml-10 text-sm hover:border-b">SKILLS</li>
+          <Link href="/#skills" scroll={false}>
+            <li className=" ml-10 text-sm hover:border-b cursor-pointer">SKILLS</li>
           </Link>
-          <Link href="/">
-            <li className=" ml-10 text-sm hover:border-b">PROJECTS</li>
+          <Link href="/#projects" scroll={false}>
+            <li className=" ml-10 text-sm hover:border-b cursor-pointer">PROJECTS</li>
           </Link>
-          <Link href="/">
-            <li className=" ml-10 text-sm hover:border-b">CONTACT</li>
+          <Link href="/#contact" scroll={false}>
+            <li className=" ml-10 text-sm hover:border-b cursor-pointer">CONTACT</li>
           </Link>
         </ul>
         <div className=" md:hidden">
@@ -65,19 +71,29 @@ const Navbar = () => {
           </div>
           <div className=" py-4 flex flex-col">
             <ul>
-              <li className=" py-4 text-sm">HOME</li>
+              <Link href="/">
+              <li onClick={()=> setNav(false)} className=" py-4 text-sm">HOME</li>
+              </Link>
             </ul>
             <ul>
-              <li className=" py-4 text-sm">ABOUT</li>
+              <Link href="/#about" scroll={false}>
+              <li onClick={()=> setNav(false)} className=" py-4 text-sm">ABOUT</li>
+              </Link>
             </ul>
             <ul>
-              <li className=" py-4 text-sm">SKILLS</li>
+              <Link href="/#skills" scroll={false}>
+              <li onClick={()=> setNav(false)} className=" py-4 text-sm">SKILLS</li>
+              </Link>
             </ul>
             <ul>
-              <li className=" py-4 text-sm">PROJECTS</li>
+              <Link href="/#projects" scroll={false}>
+              <li onClick={()=> setNav(false)} className=" py-4 text-sm">PROJECTS</li>
+              </Link>
             </ul>
             <ul>
-              <li className=" py-4 text-sm">CONTACT</li>
+              <Link href="/#contact" scroll={false}>
+              <li onClick={()=> setNav(false)} className=" py-4 text-sm">CONTACT</li>
+              </Link>
             </ul>
             <div className=" pt-40">
               <p className=" uppercase tracking-widest text-[#5651e9]">
