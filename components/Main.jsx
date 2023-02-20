@@ -16,7 +16,7 @@ const Main = () => {
           <h2 className=" text-5xl py-4  font-bold md:text-6xl">
             Hi, I&apos;m <span className="text-orange-600">Dariusz</span>
           </h2>
-          <div className=" relative  shadow-gray-400 bg-gradient-to-b from-orange-600 rounded-full w-[8rem] h-[8rem] my-10 mx-auto overflow-hidden md:h-64 md:w-64 shadow-2xl">
+          <div className=" relative  shadow-gray-400 bg-gradient-to-b from-orange-600 rounded-full w-[9rem] h-[9rem] my-10 mx-auto overflow-hidden  shadow-2xl">
             <Image
               src={Darek}
               alt="Pic of me"
