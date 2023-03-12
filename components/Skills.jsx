@@ -1,5 +1,14 @@
 import React from "react";
 import Image from "next/image";
+import Html from '../public/skills/html.png'
+import Css from '../public/css.png'
+import Js from '../public/skills/javascript.png'
+import react from '../public/skills/react.png'
+import next from '../public/skills/nextjs.png'
+import node from '../public/skills/node.png'
+import github from '../public/skills/github1.png'
+import fire from '../public/skills/firebase.png'
+import tailwind from '../public/skills/tailwind.png'
 
 const Skills = () => {
   return (
@@ -12,7 +21,7 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/html.png"
+                  src={Html}
                   alt=" Html icon"
                   width="64px"
                   height="64px"
@@ -27,8 +36,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/css.png"
-                  alt=" Html icon"
+                  src={Css}
+                  alt=" Css icon"
                   width="64px"
                   height="64px"
                 />
@@ -42,8 +51,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/javascript.png"
-                  alt=" Html icon"
+                  src={Js}
+                  alt=" Javascript icon"
                   width="64px"
                   height="64px"
                 />
@@ -57,8 +66,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/react.png"
-                  alt=" Html icon"
+                  src={react}
+                  alt=" React icon"
                   width="64px"
                   height="64px"
                 />
@@ -72,8 +81,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/nextjs.png"
-                  alt=" Html icon"
+                  src={next}
+                  alt=" Next.js icon"
                   width="64px"
                   height="64px"
                 />
@@ -87,8 +96,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/node.png"
-                  alt=" Html icon"
+                  src={node}
+                  alt=" Node.js icon"
                   width="64px"
                   height="64px"
                 />
@@ -102,8 +111,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/github1.png"
-                  alt=" Html icon"
+                  src={github}
+                  alt=" Github icon"
                   width="64px"
                   height="64px"
                 />
@@ -117,8 +126,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/firebase.png"
-                  alt=" Html icon"
+                  src={fire}
+                  alt=" Firebase icon"
                   width="64px"
                   height="64px"
                 />
@@ -132,8 +141,8 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
-                  src="/../public/skills/tailwind.png"
-                  alt=" Html icon"
+                  src={tailwind}
+                  alt=" Tailwind icon"
                   width="64px"
                   height="64px"
                 />

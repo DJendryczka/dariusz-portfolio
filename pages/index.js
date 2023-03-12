@@ -20,9 +20,9 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
-        {/* <footer className=' text-center py-3 m-10 dark:text-gray-200'>
+        <footer className=' text-center py-3 m-10 dark:text-gray-200'>
           <p>2023 Dariusz Jendryczka</p>
-        </footer> */}
+        </footer>
       
 
     </div>
