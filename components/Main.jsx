@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Darek from "../public/Darek Mem..png";
+import Darek from "../public/Darek.png";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
