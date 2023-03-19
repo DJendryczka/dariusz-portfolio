@@ -26,7 +26,7 @@ const About = () => {
             while learning back-end technologis.
           </p>
           <p className=" py-2 text-gray-700 underline cursor-pointer">
-            Chek out some of my latest projects.
+            <a href="https://diagtech.se">Chek out some of my latest projects.</a>
           </p>
         </div>
         <div className=" w-full h-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4">
