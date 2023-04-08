@@ -75,9 +75,7 @@ const Contact = () => {
           <div className='col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4 bg-blue-50'>
             <div className='p-4'>
               <form
-                action='https://getform.io/f/bbd9738e-6414-40b1-871a-51ea1b47b694'
-                method='POST'
-                encType='multipart/form-data'
+                action="https://formsubmit.co/info@diagtech.se" method="POST"
               >
                 <div className='grid md:grid-cols-2 gap-4 w-full py-2'>
                   <div className='flex flex-col'>
