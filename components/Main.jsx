@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Darek from "../public/Darek Mem..png";
+import Darek from "../public/IMG_0208.jpg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -14,7 +14,7 @@ const Main = () => {
             Let&apos;s build something together
           </p>
           <h2 className=" text-5xl py-4  font-bold md:text-6xl">
-            Hi, I&apos;m <span className="text-orange-600">Dariusz</span>
+            Hi, I&apos;m <span className="text-orange-600">Darius</span>
           </h2>
           <div className=" relative  shadow-gray-400 bg-gradient-to-b from-orange-600 rounded-full w-[9rem] h-[9rem] my-10 mx-auto overflow-hidden  shadow-2xl">
             <Image
