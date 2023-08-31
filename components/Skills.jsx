@@ -5,7 +5,7 @@ import Css from '../public/css.png'
 import Js from '../public/skills/javascript.png'
 import react from '../public/skills/react.png'
 import next from '../public/skills/nextjs.png'
-import node from '../public/skills/node.png'
+import blazor from '../public/skills/Blazor.png'
 import github from '../public/skills/github1.png'
 import fire from '../public/skills/firebase.png'
 import tailwind from '../public/skills/tailwind.png'
@@ -66,6 +66,21 @@ const Skills = () => {
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
+                  src={blazor}
+                  alt=" Blazor icon"
+                  width="64px"
+                  height="64px"
+                />
+              </div>
+              <div className=" flex flex-col items-center justify-center">
+                <h3>Blazor</h3>
+              </div>
+            </div>
+          </div>
+          <div className=" p-6 shadow-xl rounded-xl ">
+            <div className=" grid grid-cols-2 gap-4 justify-center items-center">
+              <div className=" m-auto">
+                <Image
                   src={react}
                   alt=" React icon"
                   width="64px"
@@ -92,21 +107,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className=" p-6 shadow-xl rounded-xl ">
-            <div className=" grid grid-cols-2 gap-4 justify-center items-center">
-              <div className=" m-auto">
-                <Image
-                  src={node}
-                  alt=" Node.js icon"
-                  width="64px"
-                  height="64px"
-                />
-              </div>
-              <div className=" flex flex-col items-center justify-center">
-                <h3>NodeJs</h3>
-              </div>
-            </div>
-          </div>
+       
           <div className=" p-6 shadow-xl rounded-xl ">
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
@@ -122,7 +123,7 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          <div className=" p-6 shadow-xl rounded-xl ">
+          {/* <div className=" p-6 shadow-xl rounded-xl ">
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
                 <Image
@@ -136,7 +137,7 @@ const Skills = () => {
                 <h3>FIREBASE</h3>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className=" p-6 shadow-xl rounded-xl ">
             <div className=" grid grid-cols-2 gap-4 justify-center items-center">
               <div className=" m-auto">
